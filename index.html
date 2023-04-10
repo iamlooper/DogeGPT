@@ -5,32 +5,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
     <link href="style.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
 
-    <title>CatGPT</title>
-    <meta name="description" content="What if ChatGPT were a cat?">
+    <title>DogeGPT</title>
+    <meta name="description" content="What if ChatGPT were a dog?">
 </head>
 
 <body>
 
     <div id="container">
         <div class="header">
-            <h1>CatGPT</h1>
-            <p>What if ChatGPT were a cat?</p>
+            <h1>DogeGPT</h1>
+            <p>What if ChatGPT were a dog?</p>
         </div>
         <div id="chatcontainer">
 
             <div id="chat">
                 <div class="chat-bubble-container chat-gpt-bubble-container">
-                    <div class="profile-picture"><img src="/images/avatar.png" height="100%" /></div>
+                    <div class="profile-picture"><img src="images/avatar.jpeg" height="100%" /></div>
                     <div class="chat-bubble chat-gpt-bubble">
-                        Meow, meow meow meow, meow meow?
+                        Woof, woof woof woof, woof woof?
                     </div>
                 </div>
 
@@ -46,7 +44,7 @@
                 <p class="disclaimer">This site was created by <a href="https://www.twitter.com/woutervd"
                         target="_blank">Wouter van Dijke</a> (with some help from ChatGPT) | <a href="#"
                         onclick="handleInfoClick" id="infoBtn">click here to learn more about this site</a></p>
-                <p class="disclaimer">Did CatGPT make you smile? Donate to a charity for <a
+                <p class="disclaimer">Did DogeGPT make you smile? Donate to a charity for <a
                         href="https://secure.petsmartcharities.org/give/219478/#!/donation/checkout"
                         target="_blank">normal sized cats</a> or <a
                         href="https://support.worldwildlife.org/site/Donation2?df_id=12391&12391.donation=form1"
@@ -90,7 +88,7 @@
                     meows = "Woof?";
                 } else {
                     var numberOfMeows = Math.floor(Math.random() * 15); // Random number of meows between 0 and 14.
-                    var meows = "Meow"; // Always start with 1 capitalized meow
+                    var meows = "Woof"; // Always start with 1 capitalized meow
                     if (numberOfMeows == 0) {
                         meows += "."; // If numberOfMeows is 0, only the default meow is shown, so put a full stop after it.
                     } else {
@@ -155,7 +153,7 @@
             
             let newBubble3Container = document.createElement("div");
             newBubble3Container.classList.add("chat-bubble-container", "wouter-bubble-container");
-            newBubble3Container.innerHTML = '<div class="profile-picture"><img src="/images/wouter.jpeg" height="100%" /></div>';
+            newBubble3Container.innerHTML = '<div class="profile-picture"><img src="images/wouter.jpeg" height="100%" /></div>';
 
             function createLine(i) { // Create each line seperately, one at a time
                 if (i < infoText.length) { // Check if the line exists

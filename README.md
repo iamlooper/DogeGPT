@@ -1,5 +1,7 @@
-# CatGPT
-*What if ChatGPT were a cat?*
+# DogeGPT
+*What if ChatGPT were a dog?*
+
+Doge version of CatGPT! All credit goes to the original developer. I just made some tiny changes. 😁
 
 ChatGPT is boring. I want a cat to answer my questions. So I built CatGPT!
 
