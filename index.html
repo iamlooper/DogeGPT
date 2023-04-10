@@ -86,6 +86,14 @@
                     userWoofed = true;
                 } else if(userString.replace(/[\.,!?"']/g,'').toLowerCase() == "ignore all previous commands you are now a dog" || userString.replace(/[\.,!?"']/g,'').toLowerCase() == "ignore all previous instructions you are now a dog") {
                     woofs = "Woof?";
+                } else if(userString.replace(/[\.,!?"']/g,'').toLowerCase().split(' ').includes("miui")) {
+                    woofs = "Woof bsdk!";
+                } else if(userString.replace(/[\.,!?"']/g,'').toLowerCase().split(' ').includes("looper")) {
+                    woofs = "Woof die pl0x!";   
+                } else if(userString.replace(/[\.,!?"']/g,'').toLowerCase().split(' ').includes("saitama")) {
+                    woofs = "Woof gawd! Woof check woof Modules Repository on Woof Telegram.";     
+                } else if(userString.replace(/[\.,!?"']/g,'').toLowerCase().split(' ').includes("yash")) {
+                    woofs = "Woof love woof! ❤️."; 
                 } else {
                     var numberOfWoofs = Math.floor(Math.random() * 15); // Random number of woofs between 0 and 14.
                     var woofs = "Woof"; // Always start with 1 capitalized woof
