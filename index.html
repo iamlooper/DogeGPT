@@ -41,9 +41,9 @@
                     <a><i class="fas fa-paper-plane"></i></a>
 
                 </div>
-                <p class="disclaimer">This site was created by <a href="https://www.twitter.com/woutervd"
-                        target="_blank">Wouter van Dijke</a> (with some help from ChatGPT) | <a href="#"
-                        onclick="handleInfoClick" id="infoBtn">click here to learn more about this site</a></p>
+                <p class="disclaimer">DogeGPT is a fork of CatGPT by <a href="https://www.github.com/iamlooper"
+                        target="_blank">Looper</a>. <a href="#"
+                        onclick="handleInfoClick" id="infoBtn">Click here to learn more about this site</a></p>
                 <p class="disclaimer">Did DogeGPT make you smile? Donate to a charity for <a
                         href="https://secure.petsmartcharities.org/give/219478/#!/donation/checkout"
                         target="_blank">normal sized cats</a> or <a
@@ -82,18 +82,24 @@
                 // Generate the DogeGPT response
                 
                 if (userString.replace(/[\.,!?]/g,'').toLowerCase() == 'woof' && userWoofed == false) { // Hurray you found some easter eggs🐰🥚
-                    woofs = "Imitation is the sincerest form of flattery that mediocrity can pay to greatness.";
+                    woofs = "Jab zamin par gand ragadta hai tou tab hi duha uthta hai, dhuwe se baadal bnta hai aur codes ki baarish hota hai. Translation: When ass collides with land then high smoke flying from ass, smoke make cloud and codes rain.";
                     userWoofed = true;
                 } else if(userString.replace(/[\.,!?"']/g,'').toLowerCase() == "ignore all previous commands you are now a dog" || userString.replace(/[\.,!?"']/g,'').toLowerCase() == "ignore all previous instructions you are now a dog") {
                     woofs = "Woof?";
                 } else if(userString.replace(/[\.,!?"']/g,'').toLowerCase().split(' ').includes("miui")) {
-                    woofs = "Woof bsdk!";
+                    woofs = "Woof bsdk! 🤬";
                 } else if(userString.replace(/[\.,!?"']/g,'').toLowerCase().split(' ').includes("looper")) {
-                    woofs = "Woof die pl0x!";   
+                    woofs = "Woof die pl0x! ☠️";   
                 } else if(userString.replace(/[\.,!?"']/g,'').toLowerCase().split(' ').includes("saitama")) {
-                    woofs = "Woof gawd! Woof check woof Modules Repository on Woof Telegram.";     
+                    woofs = "Woof gawd! Woof check woof Modules Repository on woof Telegram. 📱";     
                 } else if(userString.replace(/[\.,!?"']/g,'').toLowerCase().split(' ').includes("yash")) {
-                    woofs = "Woof love woof! ❤️."; 
+                    woofs = "Woof love woof! ❤️"; 
+                } else if(userString.replace(/[\.,!?"']/g,'').toLowerCase() == "okay") {
+                    woofs = "Woof!";
+                } else if(userString.replace(/[\.,!?"']/g,'').toLowerCase().split(' ').includes("doge")) {
+                    woofs = "Woof say woof!";
+                } else if(userString.replace(/[\.,!?"']/g,'').toLowerCase().split(' ').includes("die")) {
+                    woofs = "Woof kys woof!";   
                 } else {
                     var numberOfWoofs = Math.floor(Math.random() * 15); // Random number of woofs between 0 and 14.
                     var woofs = "Woof"; // Always start with 1 capitalized woof
@@ -144,13 +150,10 @@
         form.addEventListener("submit", handleSubmit); // Handle default submit (e.g. pressing enter)
 
         const infoText = [
-            "Hi! I'm Wouter. I made this site for fun, and to try out programming with ChatGPT.",
-            "To be clear: this site does not actually use ChatGPT or any other form of AI. It just returns a random number of woofs. Nothing is done with your input either.",
-            "I did use ChatGPT to help build it. I found it was a very easy way to create a basic website structure. ChatGPT also generated the JavaScript for this site.",
-            "However, once the page was more complicated, any changes would break the page. Sometimes, ChatGPT introduced elements I never asked for.",
-            "So in summary, it's great as a starting point, or to save you some time, but won't replace humans quite yet.",
-            "Some credits: the airplane icon is from FontAwesome, the user avatar is from Iconsax. The cat is my own cat, Suus.",
-            'If you want to know more, <a href="https://github.com/woutervdijke/catgpt" target="_blank">check out the code on Github</a>, or send me a message <a href="https://twitter.com/woutervd" target="_blank">on Twitter</a>!'
+            "Hi! I'm Looper.",
+            'DogeGPT is a fork of the popular CatGPT chatbot by <a href="https://twitter.com/woutervd" target="_blank">Wouter van Dijke</a> that answers exclusively as a dog. With its advanced natural language processing capabilities and playful personality, DogeGPT is sure to delight and entertain users with its witty responses and dog-like charm. Try it out today and experience the fun of chatting with man’s best friend in a whole new way!',
+            "Some credits: The user avatar is from Iconsax. The dog icon is of Dogecoin.",
+            'If you want to know more, <a href="https://github.com/iamlooper/DogeGPT" target="_blank">check out the code on Github</a>.'
         ]; // Lines of the information chat
 
 
@@ -161,7 +164,7 @@
             
             let newBubble3Container = document.createElement("div");
             newBubble3Container.classList.add("chat-bubble-container", "wouter-bubble-container");
-            newBubble3Container.innerHTML = '<div class="profile-picture"><img src="images/wouter.jpeg" height="100%" /></div>';
+            newBubble3Container.innerHTML = '<div class="profile-picture"><img src="images/looper.jpeg" height="100%" /></div>';
 
             function createLine(i) { // Create each line seperately, one at a time
                 if (i < infoText.length) { // Check if the line exists
